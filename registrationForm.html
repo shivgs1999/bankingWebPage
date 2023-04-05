@@ -1,213 +1,288 @@
 <!DOCTYPE html>
 <html>
-     <head>
-           <title> User Registration Form </title>
-        <style>
-            fieldset {
-                width: 900px;
-                line-height: 1.5;
-                background-color: antiquewhite;
-            }
-        
-            h1 {
-                background-color: rgb(82, 248, 193);
-                font-size: 20px;
-                color: grey;
-                display: inline-block;
-                width: 250px;
-                height: 40px;
-            }
-        
-            h5 {
-                margin-left: -290px;
-                margin-top: 100px;
-                margin-bottom: 5px;
-                font-weight: lighter;
-                background-color: rgb(207, 246, 233);
-                display: inline-block;
-            }
-        
-            label {
-                color: teal;
-                font-size: large;
-                font-weight: bolder;
-                padding: 10px;
-            }
-        
-            input[type="text"] {
-                color: orangered;
-                width: 130px;
-                height: 20px;
-                padding: 5px 20px;
- /* Doubt */
-                /* why it is not Accepting Border   */
-                border: 15px;
-                border-radius: 20px;
-                border-color: aqua;
-            }
-        </style>
-     </head>
-     <Body>
-        <!-- <caption>Student Application Form </caption> -->
-           <fieldset>
-                      <Form>
-                             <table>
-                                     <thead>
-                                        <th><h1><u><i>USER  REGISTRATION </i></u></h1></th>
-                                        <th><h5>* Please Fill All Fields According to Given Instructions</h5></th>
-                                     </thead>
-                                     <tbody>
-                                            <tr>
-                                                <!-- ------------------------------------Student Name------------------------------------- -->
-                                                <td><label> Student Name :</label></td>
-                                                <td><input type="text" required  maxlength="10" placeholder="First Name" autofocus> 
-                                                <input type="text" maxlength="10" placeholder="Last Name"> (Max 10 Characters Allowed)
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                 <!-- ------------------------------------Fathers Name------------------------------------- -->
-                                                <td><label>Fathers Name : </label></td>
-                                                <td><input type="text" required  maxlength="10" placeholder="Fathers Name"> (Max 10 Characters Allowed)</td>
-                                            </tr>
-                                             <!-- ------------------------------------Mothers Name------------------------------------- -->
-                                            <tr>
-                                                <td><label>Mothers Name : </label></td>
-                                                <td><input type="text" required  maxlength="10" placeholder="Mothers Name"> (Max 10 Characters Allowed)</td>
-                                            </tr>
-                                             <!-- ------------------------------------Profile Photo and Signature------------------------------------- -->
-                                            <tr>
-                                                <td><label>Profile Photo & Signature :</label></td>
-                                                <td>
-                                                 Photo : <input type="file" >Signature : <input type="file">  
-                                                </td>
-                                            </tr>
-                                             <!-- ------------------------------------Gender------------------------------------- -->
-                                            <tr>
-                                                <td><label>Gender :</label></td>
-                                                <td><input type="radio" name="gender" required><label>Male </label>
-                                                    <input type="radio" name="gender" required><label>Female </label>
-                                                </td>
-                                            </tr>
-                                             <!-- ------------------------------------Date of Birth------------------------------------- -->
-                                            <tr>
-                                                <td><label>Date of Birth :</label></td>
-                                                <td><input type="date" required></td>
-                                            </tr>
-                                             <!-- ------------------------------------Contact No------------------------------------- -->
-                                            <tr>
-                                                <td><label>Contact No :</label></td>
-                                                <td><input type="number" required maxlength="10" placeholder="7757******"  ></td>
-                                            </tr>
-                                             <!-- ------------------------------------Email ID------------------------------------- -->
-                                            <tr>
-                                                <td><label>Email ID :</label></td>
-                                                <td><input type="email" required placeholder="abc@gmail.com"></td>
-                                            </tr>
-                                             <!-- ------------------------------------Address------------------------------------- -->
-                                            <tr>
-                                                <td><label>Address :</label></td>
-                                                <td><textarea rows="3" cols="30"></textarea></td>
-                                            </tr>
-                                             <!-- ------------------------------------Country------------------------------------- -->
-                                            <tr>
-                                                <td><label> Country : </label></td>
-                                                <td>
-                                                     <select required>
-                                                             <option> </option>
-                                                             <option>India</option>
-                                                             <option>Belarus</option>
-                                                             <option>China</option>
-                                                             <option>Congo</option>
-                                                             <option>Denmark</option>
-                                                             <option>Georgia</option>
-                                                             <option>Austria</option>
-                                                             <option>Israel</option>
-                                                             <option>lebanon</option>
-                                                             <option>New Zealand</option>
-                                                             <option>Oman</option>
-                                                     </select>
-                                                     &nbsp;&nbsp;&nbsp; <label>Others :</label> &nbsp;&nbsp;&nbsp; <input type="text" placeholder="Country Name">
-                                                </td>
-                                            </tr>
-                                             <!-- ------------------------------------State------------------------------------- -->
-                                            <tr>    
-                                                <td> <label> State : &nbsp;&nbsp;&nbsp;</label></td>    
-                                                <td>     
-                                                     <select required><option> </option>
-                                                             <option>Maharashtra</option>
-                                                             <option>Punjab</option>
-                                                             <option>Rajasthan</option>
-                                                             <option>Jharkhand</option>
-                                                             <option>Karnataka</option>
-                                                             <option>Goa</option>
-                                                             <option>Assam</option>
-                                                             <option>Arunachal Pradesh</option>
-                                                             <option>Kerla</option>
-                                                             <option>Madhya Pradesh</option>
-                                                             <option>Tamilnadu</option>
-                                                     </select>
-                                                     &nbsp;&nbsp;&nbsp; <label>Others :</label> &nbsp;&nbsp;&nbsp; <input type="text" placeholder="State Name">
-                                                </td>
-                                            </tr>
-                                             <!-- ------------------------------------District------------------------------------- -->
-                                            <tr>   
-                                                <td><label> District : &nbsp;&nbsp;&nbsp; </label></td>    
-                                                <td>    
-                                                     <select required><option> </option>
-                                                             <option>Mumbai</option>
-                                                             <option>Pune</option>
-                                                             <option>Kolhapur</option>
-                                                             <option>Solapur</option>
-                                                             <option>Sangli</option>
-                                                             <option>Satara</option>
-                                                             <option>Sambhajinagar</option>
-                                                             <option>Latur</option>
-                                                             <option>Osmanabad</option>
-                                                             <option>NAgpur</option>
-                                                             <option>Buldana</option>
-                                                     </select>
-                                                     &nbsp;&nbsp;&nbsp; <label>Others :</label> &nbsp;&nbsp;&nbsp;<input type="text" placeholder="District Name">
-                                                </td>
-                                            </tr>
-                                             <!-- ------------------------------------PIN Code------------------------------------- -->
-                                            <tr>
-                                                <td><label> PIN Code :</label></td>
-                                                <td><input type="number" required maxlength="6"> (Do not give Space between two Numbers)</td>
-                                            </tr>
-                                            <tr>
-                                                <td><label>Type Of Accounts :</label></td>
-                                                <td>
-                                                      <input type="checkbox"> Savings Account
-                                                      <input type="checkbox"> Salary Account
-                                                      <input type="checkbox"> Current Account
-                                                      <input type="checkbox"> Demat Account 
-                                                      <input type="checkbox">  Joint Account
-                                                      <input type="checkbox"> Recurring Deposit Account 
-                                               </td>
-                                            </tr>                                            
-                                             <!-- ------------------------------------User Name------------------------------------- -->
-                                            <tr>
-                                                    <td><label>User Name : </label></td>
-                                                    <td><input type="email" required  maxlength="10" placeholder="Like: Shiv@Nik"> (Must Add Special Character)</td>
-                                            </tr>
-                                            <!-- ------------------------------------Password------------------------------------- -->
-                                            <tr>
-                                                    <td><label>Password  : </label></td>
-                                                    <td><input type="password" required  maxlength="10" placeholder="Like: Shiv@888"> (Must Use Capital letter,Numbers,Special Characters)</td>    
-                                            </tr>
-                                             <!-- ------------------------------------Submit button------------------------------------- -->
-                                            <tr>
-                                                <td></td>
-                                                <td>
-                                                    &nbsp;&nbsp;&nbsp;<button type="submit"> Submit </button>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset"> Reset </button> (To Refill the Form )
-                                                </td>
-                                            </tr>
-                                             <!-- ------------------------------------End------------------------------------- -->
-                                     </tbody>
-                             </table>
-                      </Form>
-           </fieldset>
-     </Body>
-</html>
+  <head>
+    <title>User Registration Form</title>
+    <style>
+      fieldset {
+        width: 900px;
+        line-height: 1.5;
+        background-color: antiquewhite;
+      }
 
+      h1 {
+        background-color: rgb(82, 248, 193);
+        font-size: 20px;
+        color: grey;
+        display: inline-block;
+        width: 250px;
+        height: 40px;
+      }
+
+      h5 {
+        margin-left: -290px;
+        margin-top: 100px;
+        margin-bottom: 5px;
+        font-weight: lighter;
+        background-color: rgb(207, 246, 233);
+        display: inline-block;
+      }
+
+      label {
+        color: teal;
+        font-size: large;
+        font-weight: bolder;
+        padding: 10px;
+      }
+
+      input[type="text"] {
+        color: orangered;
+        width: 130px;
+        height: 20px;
+        padding: 5px 20px;
+        /* Doubt */
+        /* why it is not Accepting Border   */
+        border: 15px;
+        border-radius: 20px;
+        border-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <caption>Student Application Form </caption> -->
+    <fieldset>
+      <form>
+        <table>
+          <thead>
+            <th>
+              <h1>
+                <u><i>USER REGISTRATION </i></u>
+              </h1>
+            </th>
+            <th>
+              <h5>* Please Fill All Fields According to Given Instructions</h5>
+            </th>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- ------------------------------------Student Name------------------------------------- -->
+              <td><label> Student Name :</label></td>
+              <td>
+                <input
+                  type="text"
+                  required
+                  maxlength="10"
+                  placeholder="First Name"
+                  autofocus
+                />
+                <input type="text" maxlength="10" placeholder="Last Name" />
+                (Max 10 Characters Allowed)
+              </td>
+            </tr>
+            <tr>
+              <!-- ------------------------------------Fathers Name------------------------------------- -->
+              <td><label>Fathers Name : </label></td>
+              <td>
+                <input
+                  type="text"
+                  required
+                  maxlength="10"
+                  placeholder="Fathers Name"
+                />
+                (Max 10 Characters Allowed)
+              </td>
+            </tr>
+            <!-- ------------------------------------Mothers Name------------------------------------- -->
+            <tr>
+              <td><label>Mothers Name : </label></td>
+              <td>
+                <input
+                  type="text"
+                  required
+                  maxlength="10"
+                  placeholder="Mothers Name"
+                />
+                (Max 10 Characters Allowed)
+              </td>
+            </tr>
+            <!-- ------------------------------------Profile Photo and Signature------------------------------------- -->
+            <tr>
+              <td><label>Profile Photo & Signature :</label></td>
+              <td>
+                Photo : <input type="file" />Signature : <input type="file" />
+              </td>
+            </tr>
+            <!-- ------------------------------------Gender------------------------------------- -->
+            <tr>
+              <td><label>Gender :</label></td>
+              <td>
+                <input type="radio" name="gender" required /><label
+                  >Male
+                </label>
+                <input type="radio" name="gender" required /><label
+                  >Female
+                </label>
+              </td>
+            </tr>
+            <!-- ------------------------------------Date of Birth------------------------------------- -->
+            <tr>
+              <td><label>Date of Birth :</label></td>
+              <td><input type="date" required /></td>
+            </tr>
+            <!-- ------------------------------------Contact No------------------------------------- -->
+            <tr>
+              <td><label>Contact No :</label></td>
+              <td>
+                <input
+                  type="number"
+                  required
+                  maxlength="10"
+                  placeholder="7757******"
+                />
+              </td>
+            </tr>
+            <!-- ------------------------------------Email ID------------------------------------- -->
+            <tr>
+              <td><label>Email ID :</label></td>
+              <td>
+                <input type="email" required placeholder="abc@gmail.com" />
+              </td>
+            </tr>
+            <!-- ------------------------------------Address------------------------------------- -->
+            <tr>
+              <td><label>Address :</label></td>
+              <td><textarea rows="3" cols="30"></textarea></td>
+            </tr>
+            <!-- ------------------------------------Country------------------------------------- -->
+            <tr>
+              <td><label> Country : </label></td>
+              <td>
+                <select required>
+                  <option></option>
+                  <option>India</option>
+                  <option>Belarus</option>
+                  <option>China</option>
+                  <option>Congo</option>
+                  <option>Denmark</option>
+                  <option>Georgia</option>
+                  <option>Austria</option>
+                  <option>Israel</option>
+                  <option>lebanon</option>
+                  <option>New Zealand</option>
+                  <option>Oman</option>
+                </select>
+                &nbsp;&nbsp;&nbsp; <label>Others :</label> &nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="Country Name" />
+              </td>
+            </tr>
+            <!-- ------------------------------------State------------------------------------- -->
+            <tr>
+              <td><label> State : &nbsp;&nbsp;&nbsp;</label></td>
+              <td>
+                <select required>
+                  <option></option>
+                  <option>Maharashtra</option>
+                  <option>Punjab</option>
+                  <option>Rajasthan</option>
+                  <option>Jharkhand</option>
+                  <option>Karnataka</option>
+                  <option>Goa</option>
+                  <option>Assam</option>
+                  <option>Arunachal Pradesh</option>
+                  <option>Kerla</option>
+                  <option>Madhya Pradesh</option>
+                  <option>Tamilnadu</option>
+                </select>
+                &nbsp;&nbsp;&nbsp; <label>Others :</label> &nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="State Name" />
+              </td>
+            </tr>
+            <!-- ------------------------------------District------------------------------------- -->
+            <tr>
+              <td><label> District : &nbsp;&nbsp;&nbsp; </label></td>
+              <td>
+                <select required>
+                  <option></option>
+                  <option>Mumbai</option>
+                  <option>Pune</option>
+                  <option>Kolhapur</option>
+                  <option>Solapur</option>
+                  <option>Sangli</option>
+                  <option>Satara</option>
+                  <option>Sambhajinagar</option>
+                  <option>Latur</option>
+                  <option>Osmanabad</option>
+                  <option>NAgpur</option>
+                  <option>Buldana</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;
+                <label>Others :</label> &nbsp;&nbsp;&nbsp;<input
+                  type="text"
+                  placeholder="District Name"
+                />
+              </td>
+            </tr>
+            <!-- ------------------------------------PIN Code------------------------------------- -->
+            <tr>
+              <td><label> PIN Code :</label></td>
+              <td>
+                <input type="number" required maxlength="6" /> (Do not give
+                Space between two Numbers)
+              </td>
+            </tr>
+            <tr>
+              <td><label>Type Of Accounts :</label></td>
+              <td>
+                <input type="checkbox" /> Savings Account
+                <input type="checkbox" /> Salary Account
+                <input type="checkbox" /> Current Account
+                <input type="checkbox" /> Demat Account
+                <input type="checkbox" /> Joint Account
+                <input type="checkbox" /> Recurring Deposit Account
+              </td>
+            </tr>
+            <!-- ------------------------------------User Name------------------------------------- -->
+            <tr>
+              <td><label>User Name : </label></td>
+              <td>
+                <input
+                  type="email"
+                  required
+                  maxlength="10"
+                  placeholder="Like: Shiv@Nik"
+                />
+                (Must Add Special Character)
+              </td>
+            </tr>
+            <!-- ------------------------------------Password------------------------------------- -->
+            <tr>
+              <td><label>Password : </label></td>
+              <td>
+                <input
+                  type="password"
+                  required
+                  maxlength="10"
+                  placeholder="Like: Shiv@888"
+                />
+                (Must Use Capital letter,Numbers,Special Characters)
+              </td>
+            </tr>
+            <!-- ------------------------------------Submit button------------------------------------- -->
+            <tr>
+              <td></td>
+              <td>
+                &nbsp;&nbsp;&nbsp;<button type="submit">Submit</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+                  type="reset"
+                >
+                  Reset
+                </button>
+                (To Refill the Form )
+              </td>
+            </tr>
+            <!-- ------------------------------------End------------------------------------- -->
+          </tbody>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>

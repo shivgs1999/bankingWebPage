@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transfer Money</title>
+    <style>
+        head{
+            background-color: darkcyan;
+        }
+        h1{
+            background-color: bisque;
+            color: chocolate;
+            border: 5px;
+            border-radius: 10px;
+            display: inline;
+            padding: 10px 50px;
+        }
+        fieldset{
+            margin: 50px;
+            padding: 10px;
+            width: fit-content;
+            background-color: aquamarine;
+        }
+        table{
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<!-- Bank logo and navigation menu -->
+        
+	</header>
+	<fieldset align="center">
+        <h1>Transfer Money</h1>
+        <table>
+            <tr>
+                <td><label for="to">Account Holder Name :</label></td>
+                <td><input type="text" placeholder="Name of Account Owner" id="to" name="to" required></td>
+              </tr>
+            <tr>
+              <td><label for="amount">Amount:</label></td>
+              <td><input type="text" placeholder="Amount" id="amount" name="amount" required></td>
+            </tr>
+            <tr>
+                <td><label for="from">From Account:</label></td>
+                <td><select id="from" name="from" required>
+                    <option value="">-- Select Account --</option>
+                    <option value="checking">Checking Account</option>
+                    <option value="savings">Savings Account</option>
+                    <option value="savings">Salary Account</option>
+                    <option value="savings">Current Account</option>
+                    <option value="savings">Joint Account</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td><label for="to">To Account:</label></td>
+                <td><input type="text" placeholder="Account Number" id="to" name="to" required></td>
+              </tr>
+              <tr>
+                <td><label for="to">IFSC Code :</label></td>
+                <td><input type="text" placeholder="IFSC Code" id="to" name="to" required></td>
+              </tr>
+              <tr>
+                <td><label for="description">Description:</label></td>
+                <td><textarea id="description" name="description"></textarea></td>
+              </tr>
+              <tr>
+                <td><button type="submit">Transfer</button></td>
+                <td><button type="reset">Reset</button></td>
+              </tr>
+        </table>
+	<footer>
+		<!-- Additional links and contact information -->
+	</footer>
+
+</fieldset>
+</body>
+</html>
+
+			
